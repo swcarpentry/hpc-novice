@@ -19,9 +19,11 @@ title: High Performance Computing
 
 2.  Transferring files to/from the cluster (20-30 min)
 
-    a.  Filezilla and scp (macs only)
+    a.  Synchronizing local and cluster directories with git 
 
-    b.  **Activity:** transferring files to/from cluster
+    b.  Filezilla and scp for large static files
+
+    c.  **Activity:** transferring files to/from cluster
 
 3.  Queues and partitions/allocations (30 min)
 
