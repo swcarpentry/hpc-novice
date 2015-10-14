@@ -47,14 +47,14 @@ title: High Performance Computing
 
     c.  Job scheduler commands
 
-    d.  **Activity:** Start an interactive session, specifying specific
+    d.  **Activity:** start an interactive session, specifying specific
         options (number of cores, notification when job finishes,
         sending output to file, runlimit, etc.)
 
-    e.  **Activity:** Write a simple shell script and convert it into a 
-		job submission script (with the same directives as the interactive session),
-		followed by running it as a background job 
-		(*Note: this question leads into the next session.*)
+    e.  **Activity:** write a simple shell script and convert it into a 
+	job submission script (with the same directives as the interactive session),
+	followed by running it as a background job 
+	(*Note: this question leads into the next session.*)
 
 5.  Submission scripts and batch job submission (30 min)
 
