@@ -6,13 +6,13 @@ The workshop is divided into the following three sections:
 
 ### The Unix Shell
 
-The aim of this section is not to teach learners basic unix commands,
-or syntax for bash scripting,
-but rather to motivate them
-to **automate tasks and develop pipelines**.
-Topics covered will include filesystem navigation and manipulation,
-redirection and piping of standard input and output,
-file permissions, and shell scripts.
+The aim of this section is to teach learners basic unix commands in order to help them interact with a HPC infrastructure. This may entail:
+
+- difference command line and bash scripts
+- remote sessions with ssh
+- filesystem navigation and manipulation
+- basic redirection and piping of standard input and output
+
 
 ### Cluster structure and scheduling
 
