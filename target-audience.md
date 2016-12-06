@@ -7,8 +7,8 @@ industry specialists who
 computers, and now need to scale up/out, or
 
 * need to learn how to
-use HPC resources to run some domain-specific software which can
+use large-scale resources to run some domain-specific software which can
 simply not be run on smaller computers
 
 and aims to cover the essential skills required to be able to get
-started with using these HPC resources.
+started with using such resources.
