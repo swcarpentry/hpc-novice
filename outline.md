@@ -9,18 +9,19 @@ The workshop is divided into the following three sections:
 The aim of this section is to teach learners basic unix commands in order to help them interact with a HPC infrastructure. This may entail:
 
 - difference command line and bash scripts
-- remote sessions with ssh
+- remote sessions with `ssh`
 - filesystem navigation and manipulation
 - basic redirection and piping of standard input and output
 
 
 ### Cluster structure and scheduling
 
-This section will be very brief. It is meant to convey a simplistic mental model of the cluster,
-and how tasks get submitted, assigned and executed on the cluster. The used HPC infrastructure
+This section is meant to convey a simplistic mental model of the cluster,
+and how tasks get submitted, assigned and executed on the cluster.
 
-At the end of the section, they will
-submit a number of "Hello World" style batch jobs that are aligned to the Unix Shell section above.
+Towards the end of the section, learners will submit a (number of) "Hello World" style batch job(s) that are aligned to the Unix Shell section above.
+
+The session concludes by introducing and practising `environment modules` based on the observation that software on HPC and for HPC systems is very diverse and subject to change. 
 
 ### Parallel workflows
 
