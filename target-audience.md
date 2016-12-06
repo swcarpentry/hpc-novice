@@ -4,7 +4,9 @@ HPC Carpentry is targeted at graduate students, researchers, or
 industry specialists who
 
 * already write and run domain-specific software on "smaller"
-computers, and now need to scale up/out, or * need to learn how to
+computers, and now need to scale up/out, or
+
+* need to learn how to
 use HPC resources to run some domain-specific software which can
 simply not be run on smaller computers
 
