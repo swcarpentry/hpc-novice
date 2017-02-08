@@ -2,70 +2,36 @@
 layout: page
 title: High Performance Computing
 ---
-1.  Introduction to HPC and accessing the cluster (30-45 min)
 
-    a.  Discussion of computer components (CPU, storage, memory)
 
-    b.  Explanation of terminology (nodes, cores, threads, cluster,
-        serial/parallel processes)
+1.  Introduction to the Unix Shell [90 min]
 
-    c.  Structure of the cluster (login nodes, job scheduler, etc.)
+	a.  Navigating the file system (`ls`, `cd`, `pwd`, `cp`, `rm`, `mv`) [30 min] 
 
-    d.  Accessing the cluster with ssh and discussion of cluster
-        filesystem set-up
+    b.  commands and scripts [30 min]
 
-    e.  **Activity:** practice navigating the filesystem using Unix
-        commands – navigate between /home and /groups
+	c.  taking the space shuttle `ssh` to another planet [15 min]
 
-2.  Transferring files to/from the cluster (20-30 min)
+	d.  transferring files to/from a remote host (`scp`, `rsync`) [15 min]
 
-    a.  Filezilla and scp (macs only)
 
-    b.  **Activity:** transferring files to/from cluster
+2.  Clusters and Distributed Computing Infrastructure [45-60 min]
 
-3.  Queues and partitions/allocations (30 min)
+	a. the scheduling problem and our first "Hello World" [20 min]
 
-    a.  Discussion of batch job scheduler, queuing and scheduling
+	b. distributed file systems [15 min]
 
-    b.  Queue structure and priority
+	c. revisiting "Hello World" using input/output [15 min]
 
-    c.  Job scheduler commands
 
-    d.  **Activity:** Start an interactive session, specifying specific
-        options (number of cores, notification when job finishes,
-        sending output to file, runlimit, etc.)
+3.  Paradigms of Parallel Computing [90 min] 
 
-4.  Accessing tools in the cluster by exporting PATH and using modules
-    (30-45 min)
+	a. calculating with many distributed systems (MPI, shared-memory parallelisation) [30 min]
 
-    a.  Explain the PATH variable (15-20 min)
+	b. data-parallel computations (`map-reduce`) [30 min]
 
-    b.  Explain modules, discuss module commands (15-20 min)
+	c. what this is all for? [30 min]
 
-    c.  **Activity:** perform blastn or other exercise by exporting to
-        the PATH variable
 
-    d.  **Activity:** perform blastn (or other exercise) by loading the
-        blastn module (or other tool)
 
-5.  Submission scripts and batch job submission (30 min)
-
-    a.  Explain required components of a submission script
-
-    b.  Display how to write a submission script for the blastn exercise
-        previously performed
-
-    c.  Discuss batch job submission
-
-    d.  **Activity:** Change the submission script to perform batch
-        submission of blastn on multiple files and monitor progress of
-        job in queue.
-
-    e.  **Activity:** Submit the same job to a different queue and see
-        differences in time to job completion
-
-6.  MPI and multithreading (30 min)
-
-    a.  Types of parallelism and MPI concepts
-
-    b.  **Activity:** Submit a script that depends on MPI
+> All timings above should be considered lower bounds and shall be subject to change once more workshop instances of this material are performed.
