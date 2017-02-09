@@ -2,7 +2,6 @@
 
 from mpi4py import MPI
 
-
 def print_hostname():
     comm = MPI.COMM_WORLD
     rank = comm.Get_rank()
