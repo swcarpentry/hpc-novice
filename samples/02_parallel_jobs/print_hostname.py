@@ -9,7 +9,7 @@ def print_hostname():
 
     hname = MPI.Get_processor_name()
 
-    print("this is %2i/%2i running on %s" % (rank+1,size,hname))
+    print("this is rank = %2i (total: %2i) running on %s" % (rank,size,hname))
 
     comm.Barrier()
 
