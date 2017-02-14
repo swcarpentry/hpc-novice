@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: less
 title: High Performance Computing
+root: .
 ---
 
 
@@ -10,7 +11,7 @@ title: High Performance Computing
 
     b.  commands and scripts [30 min]
 
-	c.  taking the space shuttle `ssh` to another planet [15 min]
+	c.  taking the space shuttle and `ssh` to another planet [15 min]
 
 	d.  transferring files to/from a remote host (`scp`, `rsync`) [15 min]
 
