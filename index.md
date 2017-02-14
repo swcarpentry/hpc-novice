@@ -1,6 +1,5 @@
 ---
 layout: lesson
-title: HPC in a day
 root: .
 ---
 
