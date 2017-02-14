@@ -1,6 +1,7 @@
 ---
-layout: page
-title: High Performance Computing
+layout: lesson
+title: HPC in a day
+root: .
 ---
 
 
