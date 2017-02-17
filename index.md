@@ -1,6 +1,6 @@
 ---
-layout: page
-title: High Performance Computing
+layout: lesson
+root: .
 ---
 
 
