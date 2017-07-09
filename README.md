@@ -25,6 +25,6 @@ the outline.  We welcome pull requests that add material.  If you have a suggest
 re: organization of material, please open an issue for discussion.  
 
 [website](http://swcarpentry.github.io/hpc-novice/)
-[audience](https://github.com/swcarpentry/hpc-novice/issues/28)
+[audience](https://github.com/swcarpentry/blob/gh-pages/target-audience.md)
 [local-lessons](https://github.com/swcarpentry/hpc-novice/issues/27)
-[mailing-list]()
+[mailing-list](https://groups.google.com/a/carpentries.org/forum/#!forum/hpc-discuss)
