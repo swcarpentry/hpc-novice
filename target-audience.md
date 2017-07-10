@@ -15,7 +15,7 @@ started with using such resources.
 
 This lesson is intended for **novices**.  The expectation is that participants 
 have *maybe* used a command line interface, and possibly programmed 
-something python or R, but have not used the command line extensively, 
+something Python or R, but have not used the command line extensively, 
 and have never logged into a remote computer or used a job scheduler before.   
 A very novice audience might consist of people who have never done any 
 scripting or command line work.  Therefore, this lesson covers basic skills like: 
