@@ -24,7 +24,7 @@ The next stage of development is contributions from the community to refine and 
 the outline.  We welcome pull requests that add material.  If you have a suggestion 
 re: organization of material, please open an issue for discussion.  
 
-[website](http://swcarpentry.github.io/hpc-novice/)
-[audience](https://github.com/swcarpentry/blob/gh-pages/target-audience.md)
-[local-lessons](https://github.com/swcarpentry/hpc-novice/issues/27)
-[mailing-list](https://groups.google.com/a/carpentries.org/forum/#!forum/hpc-discuss)
+[website]: http://swcarpentry.github.io/hpc-novice/
+[audience]: https://github.com/swcarpentry/blob/gh-pages/target-audience.md
+[local-lessons]: https://github.com/swcarpentry/hpc-novice/issues/27
+[mailing-list]: https://groups.google.com/a/carpentries.org/forum/#!forum/hpc-discuss
