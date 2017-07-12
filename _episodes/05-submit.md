@@ -1,8 +1,18 @@
 ---
-title: "Submitting your first job to the cluster"
+title: "Submitting Your First Job"
 questions:
 - "What is a job?"
 - "How do I write and submit my first job?"
-- "How do I check the progress of this job?"
-- "How do I examine the results of this job?"
 ---
+
+Topics: 
+
+Sample submit file
+
+Submission command
+
+> ## Job scheduling roleplay
+> 
+> Create a simple submit file that submits one run of the `goostats` program 
+> from the last part of the shell lesson.  
+{: .challenge}
