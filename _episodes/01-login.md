@@ -46,7 +46,7 @@ easy to use option is "PuTTy", which can be
 downloaded [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). When 
 you open the Putty executable (putty.exe), you should see a screen like this:
 
-![](img/putty-7.jpeg)
+![](../img/putty-7.jpeg)
 
 See the field where you should enter the hostname of the head node.  
 You should use Port 22 and connect using "ssh" -- these are usually the defaults.  
