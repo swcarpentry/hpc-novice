@@ -5,6 +5,7 @@ questions:
 - "How is using a cluster different than your laptop?"
 keypoints: 
 - "A cluster or distributed system is useful when your computations require more than one computer." 
+- "Because a cluster is distributed, it is only useful for certain types of computational problems."
 ---
 
 Topics
