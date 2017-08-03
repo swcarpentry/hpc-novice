@@ -8,10 +8,8 @@ questions:
 
 Topics: 
 
-MPI or scientific program example
+scientific program example (2D heat conduction, pi estimate, map-reduce of some simple statistics problem)
 
-Talk generally about setting a threads option or using mpirun, give a few examples
+Talk generally about setting a threads option, give a few examples
 
-Exercise: run an MPI-enabled program
-
-Exercise: run an SMP program
+Exercise: run a prepared SMP program
