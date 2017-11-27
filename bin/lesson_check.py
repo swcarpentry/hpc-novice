@@ -31,7 +31,6 @@ REQUIRED_FILES = {
     '%/LICENSE.md': True,
     '%/README.md': False,
     '%/_extras/discuss.md': True,
-    '%/_extras/figures.md': True,
     '%/_extras/guide.md': True,
     '%/index.md': True,
     '%/reference.md': True,
@@ -72,12 +71,14 @@ KNOWN_CODEBLOCKS = {
     'error',
     'output',
     'source',
-    'bash',
-    'make',
-    'matlab',
-    'python',
-    'r',
-    'sql'
+    'language-bash',
+    'html',
+    'language-make',
+    'language-matlab',
+    'language-python',
+    'language-r',
+    'language-shell',
+    'language-sql'
 }
 
 # What fields are required in teaching episode metadata?
@@ -114,7 +115,6 @@ def main():
     for filename in docs.keys():
         checker = create_checker(args, filename, docs[filename])
         checker.check()
-    check_figures(args.source_dir, args.reporter)
 
     args.reporter.report()
 
@@ -163,7 +163,8 @@ def check_config(reporter, source_dir):
     reporter.check_field(config_file, 'configuration', config, 'kind', 'lesson')
     reporter.check_field(config_file, 'configuration', config, 'carpentry', ('swc', 'dc', 'lc'))
     reporter.check_field(config_file, 'configuration', config, 'title')
-    reporter.check_field(config_file, 'configuration', config, 'contact')
+    reporter.check_field(config_file, 'configuration', config, 'email')
+
 
     reporter.check({'values': {'root': '..'}} in config.get('defaults', []),
                    'configuration',
