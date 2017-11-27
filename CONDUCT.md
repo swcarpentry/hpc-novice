@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Contributor Code of Conduct"
-permalink: /conduct/
 ---
 As contributors and maintainers of this project,
 we pledge to respect all people who contribute through reporting issues,
@@ -41,4 +40,4 @@ may be reported by opening an issue or contacting one or more of the project mai
 This Code of Conduct is adapted from
 the [Contributor Covenant][contrib-covenant] Version 1.0.0.
 
-[contrib-covenant]: http://contributor-covenant.org/
+{% include links.md %}
