@@ -20,8 +20,8 @@ URL_PATTERN = r'https?://.+'
 # Defaults.
 CARPENTRIES = ("dc", "swc")
 DEFAULT_CONTACT_EMAIL = 'admin@software-carpentry.org'
+USAGE = 'Usage: "workshop_check.py path/to/root/directory"'
 
-USAGE = 'Usage: "check-workshop path/to/root/directory"'
 
 # Country and language codes.  Note that codes mean different things: 'ar'
 # is 'Arabic' as a language but 'Argentina' as a country.
@@ -205,6 +205,7 @@ def check_helpers(helpers):
 @look_for_fixme
 def check_email(email):
     """
+<<<<<<< HEAD
     'contact' must be a valid email address consisting of characters,
     an '@', and more characters.  It should not be the default contact
     email address 'admin@software-carpentry.org'.
@@ -212,6 +213,22 @@ def check_email(email):
 
     return bool(re.match(EMAIL_PATTERN, email)) and \
            (email != DEFAULT_CONTACT_EMAIL)
+=======
+    'email' must be a comma-separated list of valid email addresses.
+    The list may be empty. A valid email address consists of characters,
+    an '@', and more characters.  It should not contain the default contact
+    """
+
+    # YAML automatically loads list-like strings as lists.
+    if (isinstance(emails, list) and len(emails) >= 0):
+        for email in emails:
+            if ((not bool(re.match(EMAIL_PATTERN, email))) or (email == DEFAULT_CONTACT_EMAIL)):
+                return False
+    else:
+        return False
+  
+    return True
+>>>>>>> 01957e22bf78c20aa3728867d103305d88826164
 
 
 def check_eventbrite(eventbrite):
@@ -227,12 +244,21 @@ def check_eventbrite(eventbrite):
 
 
 @look_for_fixme
+<<<<<<< HEAD
 def check_etherpad(etherpad):
     """
     'etherpad' must be a valid URL.
     """
 
     return bool(re.match(URL_PATTERN, etherpad))
+=======
+def check_collaborative_notes(collaborative_notes):
+    """
+    'collaborative_notes' must be a valid URL.
+    """
+
+    return bool(re.match(URL_PATTERN, collaborative_notes))
+>>>>>>> 01957e22bf78c20aa3728867d103305d88826164
 
 
 @look_for_fixme
@@ -286,13 +312,23 @@ HANDLERS = {
                    'helper list isn\'t a valid list of format ' +
                    '["First helper", "Second helper",..]'),
 
+<<<<<<< HEAD
     'contact':    (True, check_email,
                    'contact email invalid or still set to ' +
+=======
+    'email':    (True, check_emails,
+                   'contact email list isn\'t a valid list of format ' +
+                   '["me@example.org", "you@example.org",..] or contains incorrectly formatted email addresses or ' +
+>>>>>>> 01957e22bf78c20aa3728867d103305d88826164
                    '"{0}".'.format(DEFAULT_CONTACT_EMAIL)),
 
     'eventbrite': (False, check_eventbrite, 'Eventbrite key appears invalid'),
 
+<<<<<<< HEAD
     'etherpad':   (False, check_etherpad, 'Etherpad URL appears invalid'),
+=======
+    'collaborative_notes':   (False, check_collaborative_notes, 'Collaborative Notes URL appears invalid'),
+>>>>>>> 01957e22bf78c20aa3728867d103305d88826164
 
     'venue':      (False, check_pass, 'venue name not specified'),
 
