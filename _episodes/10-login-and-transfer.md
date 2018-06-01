@@ -154,13 +154,13 @@ the following convention:
 
 `$` when it really doesn't matter which system the terminal is connected to.
 
-> ## Being Certain Which System your Terminal is connected to
-> If you ever need to be certain which system a terminal you are using is connected to
-> then use the follwing command: `$ hostname`.
+> ## Checking Which System your Terminal is connected to
+> To be certain which system a terminal you are using is connected to,
+> use the following command: `$ hostname`.
 {: .callout}
 
 > ## Keep Two Terminal Windows Open
-> It is strongly recommended that you have two terminals open, one connected
+> A common strategy is to have two terminals windows open, one connected
 > to the local system and one connected to the remote system, that you can
 > switch back and forth between. If you only use one terminal window then you
 > will need to reconnect to the remote system using one of the methods above
@@ -168,7 +168,7 @@ the following convention:
 > see the reverse.
 {: .callout}
 
-One thing people frequently struggle with is transferring files 
+One thing people frequently struggle with is transferring files
 to and from a cluster.
 We'll cover several methods of doing this from the command line,
 then cover how to do this using the GUI program FileZilla,
