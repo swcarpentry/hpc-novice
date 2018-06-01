@@ -198,11 +198,11 @@ This is similar to `cp` in that there are source and destination arguments.
 ```
 {: .bash}
 
-The difference between `cp` and `scp` is that in `scp` the source or destination can be remote locations.
+The difference between `cp` and `scp` is that in `scp` the source or destination can be remote systems.
 
-The syntax for referencing a remote location is as follows:
+The syntax for referencing a remote system is as follows:
  `yourUsername@remotehost:remotepath`
-Before the colon is the address for the remote resources, where after the colon is the location of the file on that remote resource.
+Before the colon is the address for the remote system, where after the colon is the location of the file on that remote system.
 
 To transfer *to* another computer:
 ```
