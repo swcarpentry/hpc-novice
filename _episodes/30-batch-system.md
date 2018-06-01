@@ -60,6 +60,21 @@ schedulers and may be deactivated on your cluster.
 
 # Batch jobs
 
+We have seen how to run interactively, but this is often not enough for more complex tasks, 
+i.e. executing a couple of commands after one another,
+or if a job takes too long.
+To solve this, we write a small script that can be run on the node.
+
+~~~
+{% include /snippets/02/submit_hostname_date.{{ site.workshop_scheduler }} %}
+~~~
+{: .bash}
+
+~~~
+{% include /snippets/02/output_hostname_date.{{ site.workshop_scheduler }} %}
+~~~
+{: .output}
+
 
 # Managing jobs
 
