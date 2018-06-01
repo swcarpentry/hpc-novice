@@ -50,6 +50,9 @@ That worked out pretty well. The problem is, it's not very helpful and doesn't h
 If she repeats this command, over and over again, the output changes. 
 So these commands must be running on another node. 
 
+The above instructions may not work on all sites, i.e. they are configurable for different 
+schedulers and may be deactivated on your cluster.
+
 ### Limitation of interactive work
 - what if we have a very long job, and we don't have time to wait for it to finish?
 - what if I need to run a lot of different commands?
