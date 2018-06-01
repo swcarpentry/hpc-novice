@@ -14,7 +14,7 @@ keypoints:
 - "The login (head) node is the entry-point to the cluster"
 - "A secure shell client is a program that lets us log-in
 to other computers and run a command-line on them"
-- "To connect to a cluster using SSH: `ssh yourUsername@remote.computer.address`"
+- "To connect to a cluster using SSH: `ssh yourUsername@{{site.remote_address}}`"
 - "`wget` downloads a file from the Internet."
 - "`sftp`/`scp` transfer files to and from your computer."
 - "You can use an SFTP client like FileZilla to transfer files through a GUI."
@@ -35,16 +35,11 @@ Here is the process for opening a terminal in each operating system.
 
 ### Linux
 There are many different versions (aka "flavours") of Linux and how to open a
-terminal window can change between flavours. Fortunately most Linux users
-already know how to open a terminal window since it is a common part of the
-workflow for Linux users. If this is something that you do not know how to do
-then a quick search on the Internet for "how to open a terminal window in"
-with your particular Linux flavour appended to the end should quickly give
-you the directions you need.
+terminal window can change between flavours.
 
 A very popular version of Linux is Ubuntu. There are many ways to open a
 terminal window in Ubuntu but a very fast way is to use the terminal shortcut
-key sequence: Ctrl+Alt+T.
+key sequence: <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T<kbd>.
 
 ### Mac
 
@@ -77,8 +72,7 @@ edition adds MobaXterm to your Windows installation as any other program you
 might install. If you are not sure that you will continue to use MobaXterm in
 the future you are likely best to choose the portable edition.
 
-Download the version that you would like to use and install it as you would
-any other software on your Windows installation. Once the software is
+Download the version that you would like to use and install it. Once the software is
 installed you can run it by either opening the folder installed with the
 portable edition and double-clicking on the file named
 *MobaXterm_Personal_10.2* or, if the installer edition was used, finding the
@@ -90,45 +84,45 @@ you will have a terminal window at your disposal.
 
 #### PuTTY
 
-It is strictly speaking not necessary to have a terminal running on your local computer in order to access and use a remote system, only a window into the remote system once connected.  PuTTy is likely the oldest, most well-known, and widely used software solution to take this approach.
+It is strictly speaking not necessary to have a terminal running on your local computer in order to access and use a remote system, only a window into the remote system once connected. PuTTy is a well-known and widely used software solution to take this approach.
 
-PuTTY is available for free download from [www.putty.org](http://www.putty.org/).  Download the version that is correct for your operating system and install it as you would other software on you Windows system.  Once installed it will be available through the start menu or similar.
+PuTTY is available for free download from [www.putty.org](http://www.putty.org/). Download the version that is correct for your operating system and install it as you would other software on you Windows system. Once installed it will be available through the start menu or similar.
 
-Running PuTTY will not initially produce a terminal but intsead a window full of connection options.  Putting the address of the remote system in the "Host Name (or IP Address)" box and either pressing enter or clicking the "Open" button should begin the connection process.
+Running PuTTY will not initially produce a terminal but instead a window full of connection options.  Putting the address of the remote system in the "Host Name (or IP Address)" box and either pressing enter or clicking the "Open" button should begin the connection process.
 
-If this works you will see a terminal window open that prompts you for a username through the "login as:" prompt and then for a password.  If both of these are passed correctly then you will be given access to the system and will see a message saying so within the terminal.  If you need to escape the authentication process you can hold the control/ctrl key and press the c key to exit and start again.
+If this works you will see a terminal window open that prompts you for a username through the `login as:` prompt and then for a password.  If both of these are passed correctly then you will be given access to the system and will see a message saying so within the terminal.  If you need to escape the authentication process you can hold the <kbd>ctrl</kbd>+<kbd>c</kbd> key to exit and start again.
 
-Note that you may want to paste in your password rather than typing it.  Use control/ctrl plus a right-click of the mouse to paste content from the clipboard to the PuTTY terminal.
+Note that you may want to paste in your password rather than typing it.  Hold <kbd>ctrl</kbd> and right-click of the mouse to paste content from the clipboard to the PuTTY terminal.
 
 For those logging in with PuTTY it would likely be best to cover the terminal basics already mentioned above before moving on to navigating the remote system.
 
 ## Logging onto the system
 
-With all of this in mind, let's connect to a cluster.
-For these examples, we will connect to Graham - a high-performance cluster located at the University of Waterloo.
-Although it's unlikely that every system will be exactly like Graham,
+With a terminal available, we can now log into a remote systems.
+For these examples, we will connect to {{site.remote_name}} - a high-performance cluster located at the {{site.location_name}}
+Although it's unlikely that every system will be exactly like {{site.remote_name}},
 it's a very good example of what you can expect from a supercomputing installation.
 To connect to our example computer, we will use SSH (if you are using PuTTY, see above).
 
 SSH allows us to connect to UNIX computers remotely, and use them as if they were our own.
-The general syntax of the connection command follows the format `ssh yourUsername@some.computer.address`
+The general syntax of the connection command follows the format `ssh yourUsername@{{site.remote_address}}`
 Let's attempt to connect to the cluster now:
 
 ```
-ssh yourUsername@remote.computer.address
+ssh yourUsername@{{site.remote_address}}
 ```
 {: .bash}
 
 ```{.output}
-The authenticity of host 'graham.computecanada.ca (199.241.166.2)' can't be established.
+The authenticity of host '{{site.remote_address}} (199.241.166.2)' can't be established.
 ECDSA key fingerprint is SHA256:JRj286Pkqh6aeO5zx1QUkS8un5fpcapmezusceSGhok.
 ECDSA key fingerprint is MD5:99:59:db:b1:3f:18:d0:2c:49:4e:c2:74:86:ac:f7:c6.
 Are you sure you want to continue connecting (yes/no)?  # type "yes"!
 Warning: Permanently added the ECDSA host key for IP address '199.241.166.2' to the list of known hosts.
-yourUsername@remote.computer.address's password:  # no text appears as you enter your password
+yourUsername@{{site.remote_address}}'s password:  # no text appears as you enter your password
 Last login: Wed Jun 28 16:16:20 2017 from s2.n59.queensu.ca
 
-Welcome to the ComputeCanada/SHARCNET cluster Graham.
+Welcome to the ComputeCanada/SHARCNET cluster {{site.remote_name}}.
 ```
 
 If you've connected successfully, you should see a prompt like the one below.
@@ -174,15 +168,15 @@ the following convention:
 > see the reverse.
 {: .callout}
 
-One thing people very frequently struggle with is transferring files 
+One thing people very frequently struggle with is transferring files
 to and from a cluster.
 We'll cover several methods of doing this from the command line,
-then cover how to do this using the GUI program FileZilla, 
+then cover how to do this using the GUI program FileZilla,
 which is much more straightforwards.
 
 ## Grabbing files from the internet
 
-To download files from the internet, 
+To download files from the internet,
 the easiest tool to use is `wget`.
 The syntax is relatively straightforwards: `wget https://some/link/to/a/file.tar.gz`
 We've actually done this before to download our example files:
@@ -195,18 +189,18 @@ We've actually done this before to download our example files:
 ## Transferring single files and folders with scp
 
 To copy a single file to or from the cluster, we can use `scp`.
-The syntax can be a little complex for new users, 
+The syntax can be a little complex for new users,
 but we'll break it down here:
 
 To transfer *to* another computer:
 ```
-[local]$ scp /path/to/local/file.txt yourUsername@remote.computer.address:/path/on/remote/computer
+[local]$ scp /path/to/local/file.txt yourUsername@{{site.remote_address}}:/path/on/remote/computer
 ```
 {: .bash}
 
 To download *from* another computer:
 ```
-[local]$ scp yourUsername@remote.computer.address:/path/on/remote/computer/file.txt /path/to/local/copy
+[local]$ scp yourUsername@{{site.remote_address}}:/path/on/remote/computer/file.txt /path/to/local/copy
 ```
 {: .bash}
 
@@ -215,14 +209,14 @@ On the remote computer, everything after the `:` is relative to our home directo
 We can simply just add a `:` and leave it at that if we don't care where the file goes.
 
 ```
-[local]$ scp local-file.txt yourUsername@remote.computer.address:
+[local]$ scp local-file.txt yourUsername@{{site.remote_address}}:
 ```
 {: .bash}
 
 To recursively copy a directory, we just add the `-r` (recursive) flag:
 
 ```
-[local]$ scp -r some-local-folder/ yourUsername@remote.computer.address:target-directory/
+[local]$ scp -r some-local-folder/ yourUsername@{{site.remote_address}}:target-directory/
 ```
 {: .bash}
 
@@ -234,7 +228,7 @@ Or perhaps we're simply not sure which files we want to tranfer yet.
 Let's connect to a cluster, using `sftp`- you'll notice it works the same way as SSH:
 
 ```
-sftp yourUsername@remote.computer.address
+sftp yourUsername@{{site.remote_address}}
 ```
 {: .bash}
 
@@ -308,7 +302,7 @@ sftp> put config.toml
 {: .bash}
 ```
 Uploading config.toml to /global/home/yourUsername/config.toml
-config.toml                                   100%  713     2.4KB/s   00:00 
+config.toml                                   100%  713     2.4KB/s   00:00
 ```
 {: .output}
 
@@ -320,7 +314,7 @@ sftp> get config.toml
 {: .bash}
 ```
 Fetching /global/home/yourUsername/config.toml to config.toml
-/global/home/yourUsername/config.toml                               100%  713     9.3KB/s   00:00 
+/global/home/yourUsername/config.toml                               100%  713     9.3KB/s   00:00
 ```
 {: .output}
 
@@ -345,7 +339,7 @@ content/resources.md              100% 1115    29.9KB/s   00:00
 ```
 {: .output}
 
-To quit, we type `exit` or `bye`. 
+To quit, we type `exit` or `bye`.
 
 ## Transferring files interactively with FileZilla (sftp)
 
@@ -355,12 +349,12 @@ In fact, it uses the exact same protocol as `sftp` under the hood.
 If `sftp` works, so will FileZilla!
 
 Download and install the FileZilla client from [https://filezilla-project.org](https://filezilla-project.org).
-After installing and opening the program, 
-you should end up with a window with a file browser of your local system 
+After installing and opening the program,
+you should end up with a window with a file browser of your local system
 on the left hand side of the screen.
 When you connect to the cluster, your cluster files will appear on the right hand side.
 
-To connect to the cluster, 
+To connect to the cluster,
 we'll just need to enter our credentials at the top of the screen:
 
 * Host: `sftp://login.cac.queensu.ca`
@@ -370,13 +364,13 @@ we'll just need to enter our credentials at the top of the screen:
 
 Hit "Quickconnect" to connect!
 You should see your remote files appear on the right hand side of the screen.
-You can drag-and-drop files between the left (local) and right (remote) sides 
+You can drag-and-drop files between the left (local) and right (remote) sides
 of the screen to transfer files.
 
 ## Compressing files
 
 Sometimes we will want to compress files ourselves to make file transfers easier.
-The larger the file, the longer it will take to transfer. 
+The larger the file, the longer it will take to transfer.
 Moreover, we can compress a whole bunch of little files into one big file to make it easier
 on us (no one likes transferring 70000 little files)!
 
@@ -391,23 +385,23 @@ The two compression commands we'll probably want to remember are the following:
 {: .challenge}
 
 > ## Working with Windows
-> When you transfer files to from a Windows system to a Unix system 
+> When you transfer files to from a Windows system to a Unix system
 > (Mac, Linux, BSD, Solaris, etc.) this can cause problems.
 > Windows encodes its files slightly different than Unix,
 > and adds an extra character to every line.
-> 
+>
 > On a Unix system, every line in a file ends with a `\n` (newline).
 > On Windows, every line in a file ends with a `\r\n` (carriage return + newline).
 > This causes problems sometimes.
-> 
+>
 > Though most modern programming languages and software handles this correctly,
 > in some rare instances, you may run into an issue.
 > he solution is to convert a file from Windows to Unix encoding with the `dos2unix` command.
-> 
+>
 > You can identify if a file has Windows line endings with `cat -A filename`.
 > A file with Windows line endings will have `^M$` at the end of every line.
 > A file with Unix line endings will have `$` at the end of a line.
-> 
+>
 > To convert the file, just run `dos2unix filename`.
 > (Conversely, to convert back to Windows format, you can run `unix2dos filename`.)
 {: .callout}
@@ -418,8 +412,3 @@ The two compression commands we'll probably want to remember are the following:
 > In fact, all file transfers using these methods occur through an SSH connection.
 > If you can connect via SSH over the normal port, you will be able to transfer files.
 {: .callout}
-
-
-
-
-
