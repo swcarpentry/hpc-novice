@@ -33,6 +33,13 @@ training_site: "https://swcarpentry.github.io/instructor-training"
 pre_survey: "https://www.surveymonkey.com/r/swc_pre_workshop_v1?workshop_id="
 post_survey: "https://www.surveymonkey.com/r/swc_post_workshop_v1?workshop_id="
 
+# ---------------------------------------------------------
+# Site specific configutations
+# ---------------------------------------------------------
+remote_name: "Rover"
+remote_address: "rover.mars.edu"
+location_name: "University of Mars"
+
 #------------------------------------------------------------
 # Lesson Generic settings (should not need to change).
 #------------------------------------------------------------
