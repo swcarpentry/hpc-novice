@@ -20,3 +20,13 @@ keypoints:
 A high-performance computer (HPC system) is a tool used by computational scientists and engineers to tackle problems that require more computing resources or time than they can obtain on the personal computers available to them. HPC systems range in size from the equivalent of just a few personal computers to tens, or even hundreds of thousands of them.  They tend to be expensive to buy and operate, so they are often shared at the departmental or institutional level.  There are also many regional and national HPC centers.  Because of this, most HPC systems are accessed remotely, over the network.
 
 HPC systems are generally constructed from many individual computers, similar in capability to many personal computers.  Each of these individual computers is often referred to as a **node**. HPC systems often include several different types of nodes, which are specialized for different purposes.  **Head** (or **front-end** or **login**) nodes are where you login to interact with the computer.  **Compute** nodes are where the real computing is done.  **Storage** nodes provide the specialized filesystems used on HPC systems.  Some HPC systems also have **service** nodes, which you don't usually interact with directly, but you will sometimes read about.  These nodes are connected by a network (or interconnect), which is often designed to provide very high performance as well.
+
+<!-- It would be nice to have a diagram that showed the different types of nodes, and the network. 
+Something like http://www.archer.ac.uk/training/course-material/2018/03/intro-hw/slides/L01_WhyHPC.pdf
+-->
+
+Depending on the HPC system, the compute nodes, even individually, might be much more powerful than a typical personal computer.  They often have multiple processors (each with many cores), and may have accelerators (such as GPUs) and other capabilities less common on personal computers.
+
+In order to share these large systems among many users, it is common to allocate subsets of the compute nodes to tasks (or **jobs**), based on requests from users.  These jobs may take a long time to complete, so they come and go in time. To manage the sharing of the compute nodes among all of the jobs, HPC systems use a **batch system** or **scheduler**.  The batch system usually has commands for submitting jobs, inquiring about their status, and modifying them.  The HPC center defines the algorithms by which jobs are prioritized for execution on the compute nodes, while ensuring that the compute nodes are not overloaded. <!-- reference to episode 03 -->
+
+
