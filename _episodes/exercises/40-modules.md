@@ -34,6 +34,12 @@
 {: .challenge}
 
 
+> ##  Understanding the Path
+>
+> Begin a new terminal session on the machine you are using remotely.  Run `which python` and see what the default Python installation location is.  Load a new `python` module of your choice.  Run `which python` again and see what the path locates as the new installation location.
+{: .challenge}
+
+
 > ##  Changing the `$PATH`
 >
 > Begin a new terminal session on the machine you are using remotely.  Echo the `$PATH` to the screen:
@@ -46,6 +52,7 @@
 >
 > What change was made to your `$PATH` as a result of the `module load` command?
 {: .challenge}
+
 
 > ##  Finding a Module
 >
