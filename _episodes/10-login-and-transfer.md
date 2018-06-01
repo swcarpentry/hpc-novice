@@ -84,7 +84,7 @@ you will have a terminal window at your disposal.
 
 #### PuTTY
 
-It is strictly speaking not necessary to have a terminal running on your local computer in order to access and use a remote system, only a window into the remote system once connected. PuTTy is a well-known and widely used software solution to take this approach.
+Any type of window can connect to a remote system, not only a terminal window. PuTTy is a well-known and widely used Graphical User Interface  solution.
 
 PuTTY is available for free download from [www.putty.org](http://www.putty.org/). Download the version that is correct for your operating system and install it as you would other software on you Windows system. Once installed it will be available through the start menu or similar.
 
@@ -99,13 +99,13 @@ For those logging in with PuTTY it would likely be best to cover the terminal ba
 ## Logging onto the system
 
 With a terminal available, we can now log into a remote systems.
-For these examples, we will connect to {{site.remote_name}} - a high-performance cluster located at the {{site.location_name}}
+For these examples, we will connect to {{site.remote_name}} - a high-performance cluster located at the {{site.location_name}}.
 Although it's unlikely that every system will be exactly like {{site.remote_name}},
 it's a very good example of what you can expect from a supercomputing installation.
 To connect to our example computer, we will use SSH (if you are using PuTTY, see above).
 
-SSH allows us to connect to UNIX computers remotely, and use them as if they were our own.
-The general syntax of the connection command follows the format `ssh yourUsername@{{site.remote_address}}`
+SSH allows us to connect to UNIX computers remotely and use them as if they were our own.
+The general syntax of the connection command follows the format `ssh yourUsername@some.remote.address`
 Let's attempt to connect to the cluster now:
 
 ```
@@ -122,7 +122,7 @@ Warning: Permanently added the ECDSA host key for IP address '199.241.166.2' to 
 yourUsername@{{site.remote_address}}'s password:  # no text appears as you enter your password
 Last login: Wed Jun 28 16:16:20 2017 from s2.n59.queensu.ca
 
-Welcome to the ComputeCanada/SHARCNET cluster {{site.remote_name}}.
+Welcome to {{site.remote_name}}.
 ```
 
 If you've connected successfully, you should see a prompt like the one below.
@@ -132,7 +132,7 @@ in this case `[yourUsername@computerName workingDirectory]$`.
 We will cover things in depth as we explore the system further.)
 
 ```{.output}
-[yourUsername@gra-login1 ~]$
+[yourUsername@{{site.machine_name}} ~]$
 ```
 
 ## Telling the Difference between the Local Terminal and the Remote Terminal
@@ -154,13 +154,13 @@ the following convention:
 
 `$` when it really doesn't matter which system the terminal is connected to.
 
-> ## Being Certain Which System your Terminal is connected to
-> If you ever need to be certain which system a terminal you are using is connected to
-> then use the follwing command: `$ hostname`.
+> ## Checking Which System your Terminal is connected to
+> To be certain which system a terminal you are using is connected to,
+> use the following command: `$ hostname`.
 {: .callout}
 
 > ## Keep Two Terminal Windows Open
-> It is strongly recommended that you have two terminals open, one connected
+> A common strategy is to have two terminals windows open, one connected
 > to the local system and one connected to the remote system, that you can
 > switch back and forth between. If you only use one terminal window then you
 > will need to reconnect to the remote system using one of the methods above
@@ -168,7 +168,7 @@ the following convention:
 > see the reverse.
 {: .callout}
 
-One thing people frequently struggle with is transferring files 
+One thing people frequently struggle with is transferring files
 to and from a cluster.
 We'll cover several methods of doing this from the command line,
 then cover how to do this using the GUI program FileZilla,

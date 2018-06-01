@@ -39,6 +39,7 @@ post_survey: "https://www.surveymonkey.com/r/swc_post_workshop_v1?workshop_id="
 remote_name: "Rover"
 remote_address: "rover.mars.edu"
 location_name: "University of Mars"
+machine_name: rover1
 
 #------------------------------------------------------------
 # Lesson Generic settings (should not need to change).
