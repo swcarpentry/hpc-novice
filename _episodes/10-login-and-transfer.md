@@ -84,7 +84,7 @@ you will have a terminal window at your disposal.
 
 #### PuTTY
 
-It is strictly speaking not necessary to have a terminal running on your local computer in order to access and use a remote system, only a window into the remote system once connected. PuTTy is a well-known and widely used software solution to take this approach.
+Any type of window can connect to a remote system, not only a terminal window. PuTTy is a well-known and widely used Graphical User Interface  solution.
 
 PuTTY is available for free download from [www.putty.org](http://www.putty.org/). Download the version that is correct for your operating system and install it as you would other software on you Windows system. Once installed it will be available through the start menu or similar.
 
