@@ -174,7 +174,7 @@ the following convention:
 > see the reverse.
 {: .callout}
 
-One thing people very frequently struggle with is transferring files 
+One thing people frequently struggle with is transferring files 
 to and from a cluster.
 We'll cover several methods of doing this from the command line,
 then cover how to do this using the GUI program FileZilla, 
@@ -184,7 +184,8 @@ which is much more straightforwards.
 
 To download files from the internet, 
 the easiest tool to use is `wget`.
-The syntax is relatively straightforwards: `wget https://some/link/to/a/file.tar.gz`
+A good tool for downloading files from the internet is `wget` form the command line.
+Here is an example of the `wget` syntax: `wget https://some/link/to/a/file.tar.gz`
 We've actually done this before to download our example files:
 
 ```
@@ -195,8 +196,19 @@ We've actually done this before to download our example files:
 ## Transferring single files and folders with scp
 
 To copy a single file to or from the cluster, we can use `scp`.
-The syntax can be a little complex for new users, 
-but we'll break it down here:
+Here we will break down the syntax for `scp`.
+
+This is similar to `cp` in that there are source and destination arguments.
+```
+[local]$ scp source destination
+```
+{: .bash}
+
+The difference between `cp` and `scp` is that in `scp` the source or destination can be remote locations.
+
+The syntax for referencing a remote location is as follows:
+ `yourUsername@remotehost:remotepath`
+Before the colon is the address for the remote resources, where after the colon is the location of the file on that remote resource.
 
 To transfer *to* another computer:
 ```
