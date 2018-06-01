@@ -6,6 +6,7 @@ questions:
 - "How do I store a file on node so that another node can see it?"
 - "How do I store a file on node so that another node cannot see it?"
 - "Do I really need scp for all of the above?"
+- "Are all shared file systems the same?"
 objectives:
 - "Submit a job that fills a file with arbitrary but known data and store it in the shared file system."
 - "Submit a job that fills a file with arbitrary but known data and store it in the local file system of the execution host."
@@ -135,3 +136,18 @@ Lola is happy. Before leaving, her colleague briefs her, that she should be caut
 > {: .solution}
 {: .challenge}
 
+> ## Different file systems
+>
+> How do you know the properties of your file systems?
+>
+> > ## Solution
+> > Find such information on your HPC documentation
+> > additionally, you can try to use `rsync` to copy files and obtain a progress information.
+> > ~~~
+> > # Example to test
+> > rsync -a --info=progress2 /tmp/filetest /tmp/fileresult > /home/results_local
+> > rsync -a --info=progress2 /tmp/filetest /home/filereult > /home/results_home
+> > rsync -a --info=progress2 /tmp/filetest /lustre/fileresult > /home/results_lustre
+> > ~~~
+> {:.solution}
+{: .challenge}
