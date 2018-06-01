@@ -113,3 +113,25 @@ Lola is happy. Before leaving, her colleague briefs her, that she should be caut
 > > The directories `home` and `lustre` (last column) are related to file systems that look like DNS lookup names as you would use for `ssh`. For example, `mack:/home` looks like something you could supply to `scp` as well.
 > {: .solution}
 {: .challenge}
+
+> ## Wallets analogy
+>
+> Explain filesytems in a cluster with an analogy of students that finds money in the streets 
+> and have their own wallets and a kitty.
+>
+> How's the first example shown in this lesson converted to this metaphor?
+> Would you know how much money have been found in total?
+> *Advanced* How everyone can register money in the kitty (a piggybank) without jammed it?
+> *Advanced* How would a buffer system would work?
+>
+> > ## Solution
+> > Each student has a wallet that is not shared with others (`/tmp`), however all have access to the kitty `/home`.
+> >
+> > If everyone adds the money they find in their own wallets, it will be impossible to know
+> > how much money there's in total, unless it's added to the kitty.
+> >
+> > *Advanced*: They have to do it in some order.
+> > *Advanced*: There can be some personal piggybank that's emptied at a certain time.
+> {: .solution}
+{: .challenge}
+
