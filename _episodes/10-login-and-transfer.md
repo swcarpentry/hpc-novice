@@ -4,18 +4,18 @@ questions:
 - "How do I open a terminal?"
 - "How do I connect to a remote computer?"
 - "How do I log in to the cluster?"
-- "How do I transfer data back and forth to the cluser?"
+- "How do I transfer data back and forth to the cluster?"
 - "How do I upload/download files to the cluster?"
 objectives:
 - "Connect to a cluster."
-- "Be able to tranfer files to and from a computing cluster."
+- "Be able to transfer files to and from a computing cluster."
 keypoints:
 - "A cluster is many small computers rather than one large computer"
 - "The login (head) node is the entry-point to the cluster"
 - "A secure shell client is a program that lets us log-in
 to other computers and run a command-line on them"
 - "To connect to a cluster using SSH: `ssh yourUsername@remote.computer.address`"
-- "`wget` downloads a file from the internet."
+- "`wget` downloads a file from the Internet."
 - "`sftp`/`scp` transfer files to and from your computer."
 - "You can use an SFTP client like FileZilla to transfer files through a GUI."
 ---
@@ -49,9 +49,9 @@ key sequence: Ctrl+Alt+T.
 ### Mac
 
 Macs have had a terminal built in since the first version of OSX since it is
-built on a Linux flavour known as BSD (Berkeley Systems Designs). 
-The terminal can be quickly opened through the use of the Searchlight tool. 
-Hold down the command key and press the spacebar. 
+built on a Linux flavour known as BSD (Berkeley Systems Designs).
+The terminal can be quickly opened through the use of the Searchlight tool.
+Hold down the command key and press the spacebar.
 In the search bar that shows up type "terminal", choose the terminal app from the list of results (it will
 look like a tiny, black computer screen) and you will be presented with a terminal window.
 Alternatively, you can find Terminal under "Utilities" in the Applications menu.
@@ -104,11 +104,11 @@ For those logging in with PuTTY it would likely be best to cover the terminal ba
 
 ## Logging onto the system
 
-With all of this in mind, let's connect to a cluster. 
+With all of this in mind, let's connect to a cluster.
 For these examples, we will connect to Graham - a high-performance cluster located at the University of Waterloo.
-Although it's unlikely that every system will be exactly like Graham, 
+Although it's unlikely that every system will be exactly like Graham,
 it's a very good example of what you can expect from a supercomputing installation.
-To connect to our example computer, we will use SSH (if you are using PuTTY, see above). 
+To connect to our example computer, we will use SSH (if you are using PuTTY, see above).
 
 SSH allows us to connect to UNIX computers remotely, and use them as if they were our own.
 The general syntax of the connection command follows the format `ssh yourUsername@some.computer.address`
@@ -131,10 +131,10 @@ Last login: Wed Jun 28 16:16:20 2017 from s2.n59.queensu.ca
 Welcome to the ComputeCanada/SHARCNET cluster Graham.
 ```
 
-If you've connected successfully, you should see a prompt like the one below. 
+If you've connected successfully, you should see a prompt like the one below.
 This prompt is informative, and lets you grasp certain information at a glance:
 in this case `[yourUsername@computerName workingDirectory]$`.
-(If you don't understand what these things are, don't worry! 
+(If you don't understand what these things are, don't worry!
 We will cover things in depth as we explore the system further.)
 
 ```{.output}
@@ -161,7 +161,7 @@ the following convention:
 `$` when it really doesn't matter which system the terminal is connected to.
 
 > ## Being Certain Which System your Terminal is connected to
-> If you ever need to be certain which system a terminal you are using is connected to 
+> If you ever need to be certain which system a terminal you are using is connected to
 > then use the follwing command: `$ hostname`.
 {: .callout}
 
@@ -173,9 +173,3 @@ the following convention:
 > when you see a change from `[local]$` to `[remote]$` and disconnect when you
 > see the reverse.
 {: .callout}
-
-
-
-
-
-
