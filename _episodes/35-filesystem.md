@@ -1,5 +1,5 @@
 ---
-title: "Working with the shared file system"
+title: "The Shared File System"
 teaching: 25
 exercises: 5
 questions:
