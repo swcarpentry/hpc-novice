@@ -1,10 +1,11 @@
 ---
 title: "HPC architecture"
-# Objective: Provide a general mind map of how HPC resources are connected together (head node, compute node, NAS)
 questions:
 - "What is a high-performance computer?!"
 - "How are high-performance computers different from personal computers?"
 - "How do these differences influence how I use HPC systems most effectively?"
+objectives:
+- "Provide a general mind map of how HPC resources are connected together (head node, compute node, NAS)"
 keypoints: 
 - "A high-performance computer system provides a larger compute capability than is possible to package in a personal computer."
 - "HPC systems are typically an aggregation of a bunch computers, each one of which can look pretty similar to your personal computer."
