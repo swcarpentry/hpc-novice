@@ -50,6 +50,9 @@ That worked out pretty well. The problem is, it's not very helpful and doesn't h
 If she repeats this command, over and over again, the output changes. 
 So these commands must be running on another node. 
 
+### Limitation of interactive work
+- what if we have a very long job, and we don't have time to wait for it to finish?
+- what if I need to run a lot of different commands?
 
 
 # Batch jobs
