@@ -115,7 +115,7 @@ The general syntax of the connection command follows the format `ssh yourUsernam
 Let's attempt to connect to the cluster now:
 
 ```
-ssh yourUsername@graham.computecanada.ca
+ssh yourUsername@remote.computer.address
 ```
 {: .bash}
 
@@ -125,7 +125,7 @@ ECDSA key fingerprint is SHA256:JRj286Pkqh6aeO5zx1QUkS8un5fpcapmezusceSGhok.
 ECDSA key fingerprint is MD5:99:59:db:b1:3f:18:d0:2c:49:4e:c2:74:86:ac:f7:c6.
 Are you sure you want to continue connecting (yes/no)?  # type "yes"!
 Warning: Permanently added the ECDSA host key for IP address '199.241.166.2' to the list of known hosts.
-yourUsername@graham.computecanada.ca's password:  # no text appears as you enter your password
+yourUsername@remote.computer.address's password:  # no text appears as you enter your password
 Last login: Wed Jun 28 16:16:20 2017 from s2.n59.queensu.ca
 
 Welcome to the ComputeCanada/SHARCNET cluster Graham.
