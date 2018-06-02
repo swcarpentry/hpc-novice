@@ -79,7 +79,7 @@ those listed at the start of the lesson.
 > differences/difficulties you imagine you may run into.
 {: .challenge}
 
-## On Command Line
+## On the Command Line
 
 Using HPC systems often involves the use of a shell through a command line
 interface (CLI) and either specialized software or programming techniques.  The
@@ -117,15 +117,6 @@ you to reap the benefits described above.
 
 ## The rest of this lesson
 
-The only way to use these types of resources is by learning to use the command line.
-This introduction to HPC systems has two parts:
-
-* We will learn to use the UNIX command line (also known as Bash).
-* We will use our new Bash skills to connect to and operate a high-performance computing supercomputer.
-
-The skills we learn here have other uses beyond just HPC -
-Bash and UNIX skills used everywhere, be it for web development, running software, or operating servers.
-It's become so essential that Microsoft
-[now ships it as part of Windows](https://www.microsoft.com/en-us/store/p/ubuntu/9nblggh4msv6)!
-Knowing how to use Bash and HPC systems will allow you to operate virtually any modern device.
-Wit all of this in mind, let's connect to a cluster and get started!
+Depending on your instructor, you may now cover some
+basic command line skills, or jump right into using a
+cluster!  
